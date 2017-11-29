@@ -138,7 +138,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
             //DONE TODO (10) If the weather data was null, show the error message
-            showErrorMessage();
+            else {
+                showErrorMessage();
+            }
 
         }
     }
