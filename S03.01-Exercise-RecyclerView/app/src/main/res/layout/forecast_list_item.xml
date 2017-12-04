@@ -10,7 +10,7 @@
         android:padding="16dp"
         android:textSize="22sp"
         android:id="@+id/tv_weather_data"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

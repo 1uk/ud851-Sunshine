@@ -44,6 +44,10 @@ public class ForeCastAdapter extends RecyclerView.Adapter<ForeCastAdapter.ForeCa
     @Override
     public void onBindViewHolder(ForeCastAdapterViewHolder holder, int position) {
         // MY TODO where do i get the data from? -> mWeatherData
+        // what could be wrong?
+        // the recyclerview could not be 'attached' to the mainactivity
+        // the view could be made invisible before showing it
+        // the view could set to null before showing it
         holder.mWeatherTextView.setText(mWeatherData[position]);
     }
 
@@ -59,6 +63,7 @@ public class ForeCastAdapter extends RecyclerView.Adapter<ForeCastAdapter.ForeCa
 
     public void setWeatherData(String[] weatherData) {
         mWeatherData = weatherData;
+        // nofityDataSetChanged does nothing at all?!
         notifyDataSetChanged();
     }
 
